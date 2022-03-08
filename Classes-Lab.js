@@ -109,7 +109,65 @@ const artist = new Artist('Jean-Jaque','Contemporary','Brooklyn, New York', 21, 
 
 console.log(artist); 
 
-artist.introduction('Anthony'); 
+artist.introduction('Anthony');
 
+//  # Number 5 
 
+class Computer{
 
+    constructor(company,ram,memory,yearMake,){
+
+        this.company = company; 
+        this.ram = ram; 
+        this.memory = memory; 
+        this.yearMake = yearMake; 
+    }
+    turnOn(){
+        console.log(`Welcome to ${this.company} computers`)
+    }
+    mail(){
+        console.log("You've got mail ")
+    }
+    storage(){
+        console.log(`You've got ${this.memory} left in storage space `)
+    }
+}
+
+const comp = new Computer('Apple','8gb','1TB',2017); 
+
+console.log(comp); 
+
+comp.storage()
+
+//  # Number 6 
+
+class Robot{
+
+    constructor(shape,height,name,creator,model){
+
+        this.shape = shape; 
+        this.height = height; 
+        this.name = name; 
+        this.creator = creator; 
+        this.model = model; 
+    }
+
+    turnOrn(){
+        console.log('Beepboop bop beep boop')
+    }
+
+    command(personName){
+        console.log(`How can I help you ${personName} today ?`)
+    }
+
+    introduction(){
+        console.log((`My name is ${this.name} and I have been years in the making my creators name is ${this.creator}`))
+    }
+
+}; 
+
+const robot = new Robot('Square',"6'3","009","Sir Issac Tesla",'Bastian'); 
+
+console.log(robot); 
+
+robot.introduction()
