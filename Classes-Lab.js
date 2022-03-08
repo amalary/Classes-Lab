@@ -234,3 +234,64 @@ const painter = new Painter('Keith Harrington','1908s',"Modern","Jean-Michel Bas
 console.log(painter); 
 
 painter.intro('Anthony'); 
+
+// # Number 9
+
+class Car{
+
+    constructor(model,year,serialNumber,miles){
+
+        this.model = model; 
+        this.year = year; 
+        this.serialNumber = serialNumber; 
+        this.miles = miles; 
+    }
+    modelSale(){
+        console.log(`The model of my car is ${this.model}`)
+    }
+
+    salePitch(personName){
+
+        console.log(`Good evning ${personName} this vehical has ${this.miles} on it made in the year ${this.year} and would a great fit for you `)
+    }
+
+    inspetion(){
+        console.log(`This serial number on this car is ${this.serialNumber}`); 
+    }
+
+};
+
+const carhhh = new Car('Toyota','1993','1bt1u1gdj',123324); 
+
+console.log(carhhh); 
+
+carhhh.salePitch('Brandon'); 
+
+//  # Number 10 
+
+class Laptop { 
+
+    constructor(company,color,storage,price){
+        this.company = company; 
+        this.color = color;
+        this.storage = storage; 
+        this.price = price; 
+    }
+    salesPitch(personName){
+        
+        console.log(`Hello ${personName} it Looks as if you want this new ${this.company} laptop huh ?`);
+    }
+    specs(){
+        console.log(`Did you know this ${this.company} has about ${this.storage} all for just the price of ${this.price}`)
+    }
+    talk(){
+        console.log(` ${this.company} always makes the best computers out there `)
+
+    } 
+};
+
+const laptop = new Laptop('Apple','Slate-Gray','250GB','1200');
+
+console.log(laptop);
+
+laptop.salesPitch('Alex'); 
