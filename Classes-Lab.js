@@ -170,4 +170,67 @@ const robot = new Robot('Square',"6'3","009","Sir Issac Tesla",'Bastian');
 
 console.log(robot); 
 
-robot.introduction()
+robot.introduction(); 
+
+//  # Number 7 
+
+class Dog {
+
+    constructor(name,breed,bark,age,color,size,owner){
+
+        this.name = name; 
+        this.breed = breed; 
+        this.bark = bark; 
+        this.age = age; 
+        this.color = color; 
+        this.size = size; 
+        this.owner = owner; 
+    }
+    petMe(){
+        console.log('* dog begins to wag its tail happily*')
+    }
+    rollOver(){
+        console.log('Dog begins to roll over')
+    }
+    layDown(){
+        console.log('*Dog proceeds to lay down for owen')
+    }
+    master(){
+        console.log(`My owners name is ${this.owner}`); 
+    }
+
+}; 
+
+const dogg = new Dog('Buddy','Golden Retriever','woof woof',3,'Golden','Big','Christopher Robbins' ); 
+
+console.log(dogg); 
+
+dogg.master();
+
+//  # Number 8 
+
+class Painter {
+    constructor(name,era,style,influence){
+
+        this.name = name; 
+        this.era = era; 
+        this.style = style; 
+        this.influence = influence; 
+    }
+    intro(personName){
+        console.log(`Hello ${personName} I am ${this.name} and welcome to my studio`); 
+    }
+    comment(personName){
+
+        console.log(`${personName} don't you just love the way these blues mesh well together ?`);
+    }
+    work(){
+        cosnole.log(`${this.name} begin to pain endlessly until product is done`);
+    }
+}
+
+const painter = new Painter('Keith Harrington','1908s',"Modern","Jean-Michel Basquiat");
+
+console.log(painter); 
+
+painter.intro('Anthony'); 
