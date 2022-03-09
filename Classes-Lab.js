@@ -295,3 +295,80 @@ const laptop = new Laptop('Apple','Slate-Gray','250GB','1200');
 console.log(laptop);
 
 laptop.salesPitch('Alex'); 
+
+// # Number 11 
+
+class Humvee {
+
+    constructor(year,model,electric,miles){
+
+        this.year = year; 
+        this.model = model; 
+        this.electric = electric; 
+        this.miles = miles; 
+    }
+    sound(){
+
+        console.log(`This Humvee was made in ${this.year} vrooom vroom`);
+
+    }
+
+    make(){
+
+        console.log(`This car is a ${this.model} made in the year ${this.year}`);
+
+    }
+    fuel(personName){
+        console.log(`Yes ${personName} it is electric`);
+    }
+
+};
+
+const hummer = new Humvee(2023,'Hummer','Yes',20000); 
+
+console.log(hummer); 
+
+hummer.fuel('Liam'); 
+
+//  # Number 12
+class SmartPhone{
+
+    constructor(company,storage,newFeature,provider){
+
+        this.company = company; 
+        this.storage = newFeature; 
+        this.provider - provider; 
+        this.storage = storage; 
+    }
+
+    sellIt(){
+        console.log(`${this.company} always make qualtiy phones form what I can see`)
+    }
+
+    specs(){
+        console.log(`This phone has at least ${this.storage} on it so you have space`)
+    }
+
+    action(personName){
+        console.log(`Hey ${personName} look at this new feature ${this.company} added to their phone`)
+    }
+}
+
+const smarPhone = new SmartPhone('Microsoft','128GB','Facetime','AtT&T'); 
+
+console.log(smarPhone);
+
+smarPhone.specs(); 
+
+// # Number 13 
+class Babay { 
+
+    constructor(age,weight,cleanDiaper,mood,awake){
+
+        this.age = age; 
+        this.weight = weight; 
+        this.cleanDiaper = cleanDiaper; 
+        this.mood = mood; 
+        this.awake = awake; 
+    }
+}
