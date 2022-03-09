@@ -354,21 +354,98 @@ class SmartPhone{
     }
 }
 
-const smarPhone = new SmartPhone('Microsoft','128GB','Facetime','AtT&T'); 
+const smarPhone = new SmartPhone('Microsoft','128GB','Facetime','AT&T'); 
 
 console.log(smarPhone);
 
 smarPhone.specs(); 
 
 // # Number 13 
-class Babay { 
+class Baby { 
 
-    constructor(age,weight,cleanDiaper,mood,awake){
+    constructor(name,age,weight,cleanDiaper,mood,awake){
+
 
         this.age = age; 
         this.weight = weight; 
         this.cleanDiaper = cleanDiaper; 
         this.mood = mood; 
-        this.awake = awake; 
+        this.awake = awake;
+        this.name = name;
     }
-}
+    info(){
+        console.log(`This baby's name is ${this.name} and it is exactly ${this.age} old`);
+    }
+
+    diaperDuty(){
+        console.log(`I wonder if ${this.name} has a clean diaper. Do they ? ${this.cleanDiaper} `)
+    }
+
+    temperament(){
+        console.log(` Hey I think ${this.name} looks kinda ${this.mood} today don't you ? `)
+    }
+}; 
+
+const babby = new Baby('Fiona','3 months','12lbs','Yes','mellow','No',)
+
+console.log(babby); 
+
+babby.info(); 
+
+// # Number 14 
+
+class FireTruck {
+
+    constructor(fireStation,city,numberOfMemebers){
+
+        this.fireStation = fireStation;
+        this.city = city; 
+        this.numberOfMemebers = numberOfMemebers; 
+    }
+    info(){
+        console.log(`Which fire station is this ? I think it is ${this.fireStation}`); 
+    }
+
+    local(){
+        console.log(`This fire station is in ${this.city}`);
+    }
+
+    deats(personName){
+        console.log(`Hey ${personName} did you know that fire station ${this.fireStation} has ${this.numberOfMemebers} members ? `)
+    }
+};
+
+const fireTruck = new FireTruck(11,'New York City',22); 
+
+console.log(fireTruck); 
+
+fireTruck.deats('Jack'); 
+
+//  # Number 15
+class Bird {
+
+    constructor(type,color,wingSpan){
+
+        this.type = type; 
+        this.color = color;
+        this.wingSpan = wingSpan; 
+    }
+    info(){
+        console.log(`This type of bird is a ${this.type}`);
+    }
+    deats(personName){
+
+        console.log(`Hey ${personName} this is bird has a wingspan of ${this.wingSpan}`);
+    }
+    compliment(){
+        console.log(`I truly admore the ${this.type} bird it reminds me of Atticus`)
+    }
+
+}; 
+
+const birdy = new Bird('Finch','Blue','6 inches');
+
+console.log(birdy); 
+
+birdy.compliment()
+
