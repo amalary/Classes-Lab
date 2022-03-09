@@ -267,9 +267,8 @@ console.log(carhhh);
 
 carhhh.salePitch('Brandon'); 
 
-//  # Number 10 
-
-class Laptop { 
+//  # Number 10
+class Laptop {
 
     constructor(company,color,storage,price){
         this.company = company; 
@@ -421,7 +420,7 @@ console.log(fireTruck);
 
 fireTruck.deats('Jack'); 
 
-//  # Number 15
+//  # Number 15 
 class Bird {
 
     constructor(type,color,wingSpan){
@@ -447,5 +446,46 @@ const birdy = new Bird('Finch','Blue','6 inches');
 
 console.log(birdy); 
 
-birdy.compliment()
+birdy.compliment();
 
+
+class Person {
+    constructor(name,age,eyes,hair){
+        this.legs = 2;
+        this.arms = 2; 
+        this.eyes = eyes; 
+        this.hair = hair;
+        this.name = name;
+        this.age = age;
+    }
+    greeting(personName){
+        console.log('Hello ' + personName + ' how is it going ? ')
+    }
+    introduction(){
+        console.log(`Greetings may name is ${this.name} and I'm about ${this.age} years old `)
+    }
+};
+
+
+//  This is an example of smartphone inheriting methods from Person 
+class SmartPhone extends Person{
+
+
+    sellIt(){
+        console.log(`${this.company} always make qualtiy phones form what I can see`)
+    }
+
+    specs(){
+        console.log(`This phone has at least ${this.storage} on it so you have space`)
+    }
+
+    action(personName){
+        console.log(`Hey ${personName} look at this new feature ${this.company} added to their phone`)
+    }
+}; 
+
+const personWithPhone = new SmartPhone('Apple', '123GB','Facetime2','AT&T'); 
+
+console.log(personWithPhone); 
+
+personWithPhone.specs();
